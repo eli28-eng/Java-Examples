@@ -1,9 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Microwave microwave1 = new Microwave("Xiaomi", 1200);
-        Microwave microwave2 = new Microwave("Samsum", 900);
+        System.out.println(getRandomHalf(100, 103));
+    }
 
-        System.out.println(microwave1);
-        System.out.println(microwave2);
+    public static int myRandom(int a, int b) {
+        return (int) (Math.random() * (b - a + 1) + a);
+    }
+
+    public static double getRandomHalf(int a, int b) {
+        return (int) (Math.random() * (2*b - 2*a)) / 2.0 + a;
     }
 }
